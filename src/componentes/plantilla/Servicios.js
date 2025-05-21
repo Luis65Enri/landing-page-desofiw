@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { ImagenServicios, ListarServicios } from "../../configuraciones/ApiUrls";
 import { AxiosPublico } from "../axios/Axios";
-import { ListarServicios, ImagenServicios } from "../../configuraciones/ApiUrls";
 
 const Servicios = () => {
   const [servicios, setServicios] = useState([]);

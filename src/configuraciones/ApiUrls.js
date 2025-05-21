@@ -1,4 +1,4 @@
-export const Servidor = 'https://34.59.12.245:3050/api/';
+export const Servidor = 'http://34.59.12.245:3051/api/';
 export const ListarTestimonio = Servidor + 'clientes/listar';
 export const GuardarTestimonio = Servidor + 'clientes/guardar';
 export const ListarServicios = Servidor + 'servicios/listar';
