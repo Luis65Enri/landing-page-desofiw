@@ -34,24 +34,62 @@ const Servicios = () => {
             {servicios.length > 0 ? (
               servicios.map((serv) => (
                 <div key={serv.id} className="col-lg-4 mb-3">
-                  <div className="product-item mb-2">
-                    <div className="product-img">
+                  <div className="product-item mb-2" style={{ width: '250px' }}>
+                    <div
+                      className="product-img"
+                      style={{
+                        width: '250px',
+                        height: '200px',
+                        position: 'relative',
+                        overflow: 'hidden',
+                      }}
+                    >
                       <img
                         className="img-fluid"
                         src={`${ImagenServicios}${serv.imagen}`}
                         alt={serv.nombre}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                          display: 'block',
+                        }}
                       />
                       <a
                         type="button"
                         className="btn btn-primary"
                         data-toggle="modal"
                         data-target={`#modalServicio${serv.id}`}
+                        style={{
+                          position: 'absolute',
+                          bottom: '10px',
+                          right: '10px',
+                          zIndex: 2,
+                        }}
                       >
                         <i className="fa fa-2x fa-plus text-white" />
                       </a>
                     </div>
-                    <div className="bg-secondary text-center p-4">
-                      <h3 className="m-0">{serv.nombre}</h3>
+
+                    <div
+                      className="bg-secondary text-center p-4"
+                      style={{
+                        maxWidth: '250px',
+                      }}
+                    >
+                      <h3
+                        className="m-0"
+                        style={{
+                          display: '-webkit-box',
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: 'vertical',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                        }}
+                        title={serv.nombre}
+                      >
+                        {serv.nombre}
+                      </h3>
                     </div>
                   </div>
                 </div>

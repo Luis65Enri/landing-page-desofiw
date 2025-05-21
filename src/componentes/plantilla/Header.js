@@ -33,7 +33,7 @@ const Header = () => {
                 <div id="header-carousel" className="carousel slide carousel-fade" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item position-relative active" style={{ height: '100vh', minHeight: '400px' }}>
-                            <img className="position-absolute w-100 h-100" src="img/sigres.jpg" style={{ objectFit: 'cover' }} alt="slide 1" />
+                            <img className="position-absolute w-100 h-100" src="img/Inicio1.png" style={{ objectFit: 'cover' }} alt="slide 1" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div className="p-3" style={{ maxWidth: '900px' }}>
                                     <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: '3px' }}>Transformando el Futuro</h4>
@@ -44,7 +44,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="carousel-item position-relative" style={{ height: '100vh', minHeight: '400px' }}>
-                            <img className="position-absolute w-100 h-100" src="img/arenagrava.jpg" style={{ objectFit: 'cover' }} alt="slide 2" />
+                            <img className="position-absolute w-100 h-100" src="img/Inicio2.png" style={{ objectFit: 'cover' }} alt="slide 2" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div className="p-3" style={{ maxWidth: '900px' }}>
                                     <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: '3px' }}>Eficiencia y Escalabilidad</h4>
@@ -72,11 +72,18 @@ const Header = () => {
             <div className="container-fluid py-5" id="historia">
                 <div className="container py-5">
                     <div className="row align-items-center">
-                        <div className="col-lg-5">
+                        <div className="col-lg-4">
                             <img
                                 className="img-fluid mb-4 mb-lg-0"
                                 src="img/ImagenCarlos.jpg"
                                 alt="Reseña Histórica"
+                                style={{
+                                    borderRadius: '50%',
+                                    border: '4px solid black',
+                                    width: '250px',
+                                    height: 'auto',
+                                    objectFit: 'cover'
+                                }}
                             />
                         </div>
                         <div className="col-lg-7">
